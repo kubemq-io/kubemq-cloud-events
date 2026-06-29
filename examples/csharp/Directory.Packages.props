@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="CloudNative.CloudEvents" Version="2.8.0" />
+    <PackageVersion Include="CloudNative.CloudEvents.SystemTextJson" Version="2.8.0" />
+  </ItemGroup>
+</Project>

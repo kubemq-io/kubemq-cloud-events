@@ -1,0 +1,19 @@
+{
+  "name": "kubemq-cloud-events-examples",
+  "version": "1.0.0",
+  "description": "KubeMQ CloudEvents HTTP connector examples in TypeScript",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "run-example": "npx tsx"
+  },
+  "dependencies": {
+    "cloudevents": "^10.0.0",
+    "eventsource": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

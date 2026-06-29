@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.kubemq.examples</groupId>
+  <artifactId>kubemq-cloud-events-examples</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>events/basic-pubsub</module>
+    <module>events/consumer-group</module>
+    <module>events/content-modes</module>
+    <module>events-store/basic</module>
+    <module>events-store/replay-from-first</module>
+    <module>events-store/replay-at-sequence</module>
+    <module>events-store/reconnect-resume</module>
+    <module>queues/basic-send-receive</module>
+    <module>queues/peek</module>
+    <module>queues/ack-all</module>
+    <module>commands/round-trip</module>
+    <module>queries/round-trip</module>
+    <module>routing/cesql-routing</module>
+  </modules>
+
+  <properties>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <cloudevents.version>4.0.1</cloudevents.version>
+    <jackson.version>2.17.0</jackson.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.cloudevents</groupId>
+        <artifactId>cloudevents-core</artifactId>
+        <version>${cloudevents.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.cloudevents</groupId>
+        <artifactId>cloudevents-http-basic</artifactId>
+        <version>${cloudevents.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.cloudevents</groupId>
+        <artifactId>cloudevents-json-jackson</artifactId>
+        <version>${cloudevents.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>

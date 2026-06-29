@@ -1,0 +1,10 @@
+[package]
+name = "basic-send-receive"
+version = "0.1.0"
+edition = "2021"
+[dependencies]
+cloudevents-sdk = { workspace = true }
+reqwest = { workspace = true }
+tokio = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true }

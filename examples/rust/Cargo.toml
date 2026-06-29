@@ -1,0 +1,27 @@
+[workspace]
+members = [
+  "events/basic-pubsub",
+  "events/consumer-group",
+  "events/content-modes",
+  "events-store/basic",
+  "events-store/replay-from-first",
+  "events-store/replay-at-sequence",
+  "events-store/reconnect-resume",
+  "queues/basic-send-receive",
+  "queues/peek",
+  "queues/ack-all",
+  "commands/round-trip",
+  "queries/round-trip",
+  "routing/cesql-routing",
+]
+resolver = "2"
+
+[workspace.dependencies]
+cloudevents-sdk = { version = "0.9", features = ["reqwest"] }
+reqwest = { version = "0.12", features = ["json", "stream"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4"] }
+futures-util = "0.3"
+bytes = "1"
