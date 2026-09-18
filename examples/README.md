@@ -8,7 +8,7 @@ Working code examples for the [KubeMQ CloudEvents HTTP connector](../docs/README
    ```bash
    docker run -d -p 9090:9090 \
      -e KUBEMQ_CONNECTORS_CE_ENABLE=true \
-     kubemq/kubemq
+     europe-docker.pkg.dev/kubemq/images/kubemq-next:latest
    ```
 
 2. Pick your language:
