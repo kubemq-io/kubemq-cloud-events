@@ -15,7 +15,7 @@ docker run -d \
   -p 9090:9090 \
   -p 50000:50000 \
   -e KUBEMQ_CONNECTORS_CE_ENABLE=true \
-  kubemq/kubemq
+  europe-docker.pkg.dev/kubemq/images/kubemq-next:latest
 ```
 
 Verify the CE connector is running:
